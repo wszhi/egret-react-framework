@@ -1,0 +1,25 @@
+{
+	"groups":[{
+			"keys":"bg_jpg,egret_icon_png,description_json",
+			"name":"preload"
+		}],
+	"resources":[
+		{
+			"name":"bg_jpg",
+			"scale9grid":"84,0,476,214",
+			"type":"image",
+			"url":"assets/bg.jpg"
+		},
+		{
+			"name":"egret_icon_png",
+			"scale9grid":"0,5,14,8",
+			"type":"image",
+			"url":"assets/egret_icon.png"
+		},
+		{
+			"name":"description_json",
+			"type":"json",
+			"url":"config/description.json"
+		}
+	]
+}

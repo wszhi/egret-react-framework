@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"],
+      "@c/*": ["config/*"]
+    },
+    "target": "es5",
+    "lib": ["es5", "es6", "es7", "es2017", "dom", "es2015.promise"],
+    "module": "commonjs",
+    "jsx": "react",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "removeComments": false,
+    "noImplicitAny": false,
+    "esModuleInterop": true,
+    "typeRoots": ["./node_modules/@types", "src/typed"],
+    "skipLibCheck": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"],
+  "compileOnSave": false,
+  "buildOnSave": false
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Hello World</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="full-screen" content="true" />
+    <meta name="screen-orientation" content="portrait" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="360-fullscreen" content="true" />
+    <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+    <script src="../libs/modules/egret/egret.js"></script>
+    <script src="../libs/modules/egret/egret.web.js"></script>
+    <script src="../libs/modules/game/game.js"></script>
+    <script src="../libs/modules/tween/tween.js"></script>
+    <script src="../libs/modules/assetsmanager/assetsmanager.js"></script>
+    <script src="../libs/modules/promise/promise.js"></script>
+    <script>
+      ;(function(doc, win) {
+        var docEl = doc.documentElement,
+          resizeEvt = 'onorientationchange' in window ? 'onorientationchange' : 'resize',
+          recalc = function() {
+            var clientWidth = docEl.clientWidth
+            if (!clientWidth) return
+            if (clientWidth >= 375) {
+              docEl.style.fontSize = '100px'
+            } else {
+              docEl.style.fontSize = 100 * (clientWidth / 375) + 'px'
+            }
+          }
+
+        if (!doc.addEventListener) return
+        win.addEventListener(resizeEvt, recalc, false)
+        doc.addEventListener('DOMContentLoaded', recalc, false)
+      })(document, window)
+    </script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

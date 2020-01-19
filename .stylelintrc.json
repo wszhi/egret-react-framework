@@ -1,0 +1,24 @@
+{
+  "extends": ["stylelint-config-standard"],
+  "rules": {
+    "color-hex-case": [
+      "upper",
+      {
+        "message": "uppercase for color hex"
+      }
+    ],
+    "color-no-invalid-hex": true,
+    "indentation": 2,
+    "block-no-empty": null,
+    "declaration-colon-space-after": "always",
+    "max-empty-lines": 2,
+    "unit-whitelist": ["em", "rem", "%", "s", "px", "vh", "vw", "deg"],
+    "at-rule-no-unknown": [true, {
+      "ignoreAtRules": ["function", "return", "each", "include", "mixin"]
+    }],
+    "no-descending-specificity": null,
+    "no-duplicate-selectors": null,
+    "font-family-no-missing-generic-family-keyword": null,
+    "no-empty-source": null
+  }
+}

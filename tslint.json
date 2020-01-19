@@ -1,0 +1,43 @@
+{
+    "extends": ["tslint:recommended", "tslint-react", "tslint-config-airbnb", "tslint-config-prettier"],
+    "rules": {
+        "member-access": [true, "no-public"],
+        "function-name": [true, {
+            "function-regex": "^\\*?\\[?[a-zA-Z][\\w\\d\\.]*\\]?$"
+          }],
+        "variable-name": [
+            true,
+            "ban-keywords",
+            "check-format",
+            "allow-pascal-case",
+            "allow-leading-underscore"
+        ],
+        "interface-name": false,
+        "jsx-no-lambda": false,
+        "jsx-no-multiline-js": false,
+        "jsx-alignment": false,
+        "quotemark": [true, "single", "jsx-double"],
+        "ordered-imports": [false],
+        "jsx-boolean-value": [false],
+        "object-literal-sort-keys": false,
+        "semicolon": [true, "never"],
+        "import-name": false,
+        "ter-arrow-parens": [true, "as-needed"],
+        "align": [true, "parameters", "statements", "members", "elements"],
+        "max-line-length": [true, {"limit": 160}],
+        "trailing-comma": false,
+        "prefer-template": false,
+        "object-shorthand-properties-first": false,
+        "prefer-array-literal": [true, { "allow-type-parameters": true }],
+        "no-empty": false,
+        "no-reference": false
+    },
+    "linterOptions": {
+        "exclude": [
+            "node_modules/**/*",
+            "node_modules/@types/**/*",
+            "src/game/*",
+            "build/**/*"
+        ]
+    }
+}

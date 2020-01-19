@@ -1,0 +1,10 @@
+dist/
+.temp/
+.rn_temp/
+node_modules/
+.DS_Store
+.idea
+coverage/
+src/assets/font-icons/
+src/assets/i18n/**/*.json
+.env
